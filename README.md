@@ -8,17 +8,17 @@ mutiprocessingパッケージ使ってスクレイピングを加速するので
 スクレイピングはヤフーのサーバに負荷をかかるので,悪意の使用はやめてください
 ```
 ## Useage
-### Crawlerインスタンス作成
+#### Crawlerインスタンス作成
 ```python
 import YahooFinanceSpider as y
 c = y.Crawler()
 ```
-### このCrawlerインスタンスを使ってデータをダンロードする
+#### このCrawlerインスタンスを使ってデータをダンロードする
 ### 銘柄情報の取得
 ```python
 brand = c.get_brand_info(sector_code)
 ```
-### sector_codeは以下のまとめになる
+#### sector_codeは以下のまとめになる
 ```
 '1050' # 鉱業
 '2050' # 建設業
@@ -81,16 +81,16 @@ end_time = datetime(2018,8,8)
 price = c.get_price('1301', start_time, end_time, y.DAILY)
 ```
 ## DataType
-### get_brand_info()の返すDataType
-#### Brand
+#### get_brand_info()の返すDataType
+### Brand
 ```python
 Brand.code      # 銘柄コード
 Brand.market    # 市場
 Brand.brand     # 銘柄名
 Brand.intro     # 銘柄情報
 ```
-### get_price()の返すDataType
-#### Price
+#### get_price()の返すDataType
+### Price
 ```python
 Price.date      # 日時
 Price.open      # 始値
@@ -100,7 +100,7 @@ Price.close     # 終値
 Price.volume    # 出来高
 Price.adj_close # 調整後終値
 ```
-### データが無いとき,Noneを返す
+#### データが無いとき,Noneを返す
 
 
 
