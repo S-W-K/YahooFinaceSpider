@@ -7,6 +7,10 @@ jsmを参考した上で,lxmlとmultiprocessingを使って速度を改善した
 mutiprocessingパッケージ使ってスクレイピングを加速するので,python3.5以上が必要
 スクレイピングはヤフーのサーバに負荷をかかるので,悪意の使用はやめてください
 ```
+## Installation
+```
+pip3 install YahooFinanceSpider
+```
 ## Useage
 #### Crawlerインスタンス作成
 ```python
