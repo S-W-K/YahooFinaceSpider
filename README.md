@@ -10,12 +10,12 @@ mutiprocessingパッケージ使ってスクレイピングを加速するので
 pip3 install YahooFinanceSpider
 ```
 ## Useage
-#### Crawlerインスタンス作成
+Crawlerインスタンス作成
 ```python
 import YahooFinanceSpider as y
   c = y.Crawler()
 ```
-#### このCrawlerインスタンスを使ってデータをダンロードする
+このCrawlerインスタンスを使ってデータをダンロードする
 ### 銘柄情報の取得
 ```python
 brand = c.get_brand_info(sector_code)
@@ -90,7 +90,7 @@ end_time = datetime(2018,8,8)
     print(i.close) 
 ```
 ## DataType
-#### get_brand_info()の返すDataType
+get_brand_info()の返すDataType
 ### Brand
 ```python
 Brand.code      # 銘柄コード
@@ -98,7 +98,7 @@ Brand.market    # 市場
 Brand.brand     # 銘柄名
 Brand.intro     # 銘柄情報
 ```
-#### get_price()の返すDataType
+get_price()の返すDataType
 ### Price
 ```python
 Price.date      # 日時
@@ -109,7 +109,7 @@ Price.close     # 終値
 Price.volume    # 出来高
 Price.adj_close # 調整後終値
 ```
-#### データが無いとき,Noneを返す
+データが無いとき,Noneを返す
 
 
 
