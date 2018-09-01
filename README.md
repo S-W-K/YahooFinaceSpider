@@ -1,7 +1,7 @@
 # YahooFinaceSpider
 ## Intro.
 
-#### 日本の[ヤフーファイナンス](https://stocks.finance.yahoo.co.jp/)から株価データをスクレイピングするプログラム
+日本の[ヤフーファイナンス](https://stocks.finance.yahoo.co.jp/)から株価データをスクレイピングするプログラム
 [jsm](https://pypi.org/project/jsm/)がメンテーナンスしていないため,新たなスクレイピングプログラムを作った
 jsmを参考した上で,lxmlとmultiprocessingを使って速度を改善した
 mutiprocessingパッケージ使ってスクレイピングを加速するので,python3.5以上が必要
