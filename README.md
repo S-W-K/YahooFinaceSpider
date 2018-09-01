@@ -1,5 +1,7 @@
 # YahooFinaceSpider
+
 -------------------------------------
+
 ## Intro.
 '''
 日本の[ヤフーファイナンス](https://stocks.finance.yahoo.co.jp/)から株価データをスクレイピングするプログラム
