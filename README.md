@@ -76,6 +76,7 @@ brand = c.get_brand_info()
 from datetime import datetime
 start_time = datetime(2018,1,1)
 end_time = datetime(2018,8,8)
+
 # 上記期間の銘柄コード1301会社の株価データを取得
 # 全銘柄の銘柄コードはget_brand_info()で獲得できる
 price = c.get_price('1301', start_time, end_time, y.DAILY)
