@@ -71,6 +71,9 @@ price = c.get_price(code, start_time, end_time, y.MONTHLY)
 brand = c.get_brand_info('0050')
 # 全銘柄情報を取得
 brand = c.get_brand_info()
+# リストからインスタンスを取り出す
+for i in brand:
+  print(i.code) 
 ```
 ```python
 from datetime import datetime
@@ -80,6 +83,9 @@ end_time = datetime(2018,8,8)
 # 上記期間の銘柄コード1301会社の株価データを取得
 # 全銘柄の銘柄コードはget_brand_info()で獲得できる
   price = c.get_price('1301', start_time, end_time, y.DAILY)
+# リストからインスタンスを取り出す
+  for i in price:
+    print(i.close) 
 ```
 ## DataType
 #### get_brand_info()の返すDataType
