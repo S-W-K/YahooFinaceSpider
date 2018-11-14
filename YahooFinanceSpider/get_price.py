@@ -7,7 +7,7 @@ import math
 import re
 from fake_useragent import UserAgent
 from multiprocessing import Pool
-from .data_type import Price
+from .data_type import Price, TopixPrice
 
 DAILY = 1
 MONTHLY = 2
@@ -68,6 +68,8 @@ class GetPrice:
             data = tr.xpath('./td/text()')
             if len(data) == 7:
                 results.append(Price(data))
+            elif len(data) == 5:
+                results.append(TopixPrice(data))
         return results
 
     def _multiprc(self, function, arg):

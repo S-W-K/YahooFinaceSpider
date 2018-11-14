@@ -59,7 +59,7 @@ brand = c.get_brand_info(sector_code)
 ### 株価データの取得
 ```python
 # 日毎のデータを取得
-price = c.get_price(code, start_time, end_time, y.DAILY) # 2017-3-1~2017-5-4の株価
+price = c.get_price(code, start_time, end_time, y.DAILY) 
 
 # 週間のデータを取得
 price = c.get_price(code, start_time, end_time, y.WEEKLY)
@@ -110,7 +110,12 @@ Price.volume    # 出来高
 Price.adj_close # 調整後終値
 ```
 データが無いとき,Noneを返す
-
-
-
-
+### TopixPrice
+```python
+TopixPrice.date      # 日時
+TopixPrice.open      # 始値
+TopixPrice.high      # 高値
+TopixPrice.low       # 安値
+TopixPrice.close     # 終値
+```
+データが無いとき,Noneを返す
