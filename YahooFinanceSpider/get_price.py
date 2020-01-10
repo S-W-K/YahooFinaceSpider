@@ -54,7 +54,7 @@ class GetPrice:
             num = html.xpath(
                 '// *[@id="main"]//span[@class="stocksHistoryPageing yjS"]')[0].text
         except:
-            print('Couldn\'t finad this brand data')
+            print('Couldn\'t find this brand data')
             brand_page = None
         else:
             num = re.search(r'/(\d+)件', num).group(1)
