@@ -2,9 +2,9 @@
 日本語バージョンは[こちら](https://github.com/S-W-K/YahooFinanceSpider/blob/master/README_JPN.md)  
 ## Intro.
 The multiprocessing web crawler	that downloads historical stock data from [YahooFinance(Japan)](https://stocks.finance.yahoo.co.jp/).  
-Because [jsm](https://pypi.org/project/jsm/) is no longer be maintained, 
-so I rewrite the crawler with lxml, add the mechanism that prevents the crawler from getting banned, 
-and use multiprocessing to accelerate.  
+Because [jsm](https://pypi.org/project/jsm/) is no longer being maintained, 
+I rewrote the crawler with lxml, added the mechanism that prevents the crawler from getting banned, 
+and used multiprocessing to accelerate.  
 Python3.5 or above is needed for multiprocessing libarary.  
 Crawling will increase the burden on yahoo's server, so unnecessary use should be avoided.
 
@@ -13,7 +13,7 @@ Crawling will increase the burden on yahoo's server, so unnecessary use should b
 pip3 install YahooFinanceSpider
 ```
 
-## Useage
+## Usage
 Create a Crawler instance.
 ```python
 import YahooFinanceSpider as y
